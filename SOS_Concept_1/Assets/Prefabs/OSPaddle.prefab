@@ -124,7 +124,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_movementSpeed: 0
-  m_isHorizontal: 0
   m_orientation: 0
 --- !u!50 &714223549551430100
 Rigidbody2D:

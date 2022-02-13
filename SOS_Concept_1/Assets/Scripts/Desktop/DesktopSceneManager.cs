@@ -5,16 +5,22 @@ using UnityEngine;
 public class DesktopSceneManager : MonoBehaviour
 {
     public GameObject m_refPaddle;
+    public GameObject m_refCursor;
 
     public Vector2 m_hPaddlePosition;
     public Vector2 m_vPaddlePosition;
     public float m_paddleInitialMovementSpeed = 20.0f;
 
+    public Vector2 m_cursorPosition;
+    public float m_cursorInitialMovementSpeed = 10f;
+
     private List<GameObject> m_paddles;
+    private List<GameObject> m_cursors;
     
     void Start()
     {
         m_paddles = new List<GameObject>();
+        m_cursors = new List<GameObject>();
 
         CreateSceneObjects();
     }
@@ -47,6 +53,16 @@ public class DesktopSceneManager : MonoBehaviour
         paddleScript.m_movementSpeed = m_paddleInitialMovementSpeed;
 
         m_paddles.Add(paddle);
+
+        var cursor = GameObject.Instantiate(
+            m_refCursor,
+            new Vector3(m_cursorPosition.x, m_cursorPosition.y, 0f),
+            Quaternion.identity);
+        var cursorScript = cursor.GetComponent<OSCursor>();
+        cursorScript.m_movementSpeed = m_cursorInitialMovementSpeed;
+
+        m_cursors.Add(cursor);
+        
     }
     
     void Update()
