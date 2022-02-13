@@ -135,3 +135,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_movementSpeed: 0
+  m_captureColor: {r: 0.9339623, g: 0.5174617, b: 0.13656995, a: 1}

@@ -71,7 +71,6 @@ public class OSPaddle : MonoBehaviour
         if (collision.gameObject.tag == "Cursor")
         {
             ReflectCursor(collision.gameObject);
-            Debug.Log("!");
         }
     }
 
