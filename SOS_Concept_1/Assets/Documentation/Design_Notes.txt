@@ -1,0 +1,6 @@
+Notes accompanying first asset group:
+-For now, let's have just the arrow keys control the paddles (L/R Horizontal arrows, U/D Vertical)
+-Mouse click to grab a file?  Maybe the "S" key?
+-I think it might be a good idea for the mouse ball and paddle to change color depending on the action taken, so I recolored both gold for when it "grabs" the folder.  It'll probably be better to do any palette swap in Unity but here ya go! (Also, I forgot to switch the color of the paddle in the vid so...pretend I did.)
+-Let's have ""out" just reset the playfield for right now until we figure how many paddles we're using, whether we're having walls, etc.
+-The vid's insanely fast, I'm not expecting that speed!
